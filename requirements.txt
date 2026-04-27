@@ -1,0 +1,45 @@
+# Pinned package versions used to produce main_notebook.ipynb.
+#
+# Curated from the local Python 3.9 venv: the data-science stack the notebook
+# actually imports (numpy, pandas, scikit-learn, torch, matplotlib, seaborn) plus
+# the Jupyter runtime (ipykernel, nbformat, nbconvert) and direct transitive deps
+# (joblib, threadpoolctl, pillow, etc.). Pip will resolve the rest of the
+# transitive graph automatically when installing.
+#
+# The unfiltered `pip freeze` of the venv is much longer (268 packages) because
+# the venv shares packages with system tooling unrelated to this project (ROS,
+# misc. CLI utilities). Those pollute the freeze without being importable from
+# PyPI in a Colab session, so they were stripped out for reproducibility.
+#
+# To reproduce in a fresh environment:
+#   python3 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+
+cycler==0.12.1
+filelock==3.19.1
+fonttools==4.60.2
+fsspec==2025.10.0
+ipykernel==6.31.0
+joblib==1.5.3
+jupyter-core==5.8.1
+kiwisolver==1.4.7
+matplotlib==3.9.4
+mpmath==1.3.0
+nbconvert==7.17.0
+nbformat==5.10.4
+networkx==3.2.1
+numpy==2.0.2
+pandas==2.3.3
+pillow==11.3.0
+pyparsing==3.3.2
+python-dateutil==2.9.0.post0
+pytz==2025.2
+scikit-learn==1.6.1
+scipy==1.13.1
+seaborn==0.13.2
+six==1.17.0
+sympy==1.14.0
+threadpoolctl==3.6.0
+torch==2.8.0
+typing-extensions==4.15.0
+tzdata==2025.3

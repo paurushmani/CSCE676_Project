@@ -1,3 +1,14 @@
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+.DS_Store
+.venv/
+
+# Personal study notes / homework / assignment spec — not part of the public deliverable
+HW13.pdf
+final_deliverable.pdf
+interview_cheatsheet.md
+prompt-ai-interview.txt
+
+# Video production source files — the link in README is the deliverable
+video/
